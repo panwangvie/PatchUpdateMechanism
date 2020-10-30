@@ -1,0 +1,124 @@
+﻿<Window x:Class="PatchUpdate.MainUpdate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PatchUpdate"
+        xmlns:local1="clr-namespace:UpdateFile.Control;assembly=UpdateFile"
+        mc:Ignorable="d"
+        Height="560" Width="780"
+         ShowInTaskbar="False" Background="Transparent"
+             WindowStartupLocation="Manual" AllowsTransparency="True" 
+              WindowStyle="None" 
+        >
+    <Window.Resources>
+        <ResourceDictionary x:Name="winStyle" Source="pack://application:,,,/UpdateFile;component/Styles/MeetStyle.xaml">
+
+        
+        </ResourceDictionary>
+
+   
+       
+    </Window.Resources>
+ 
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid x:Name="grid" Grid.RowSpan="4" Grid.Row="{Binding Rows}">
+            <local1:NineGridBorder x:Name="nineboder" Height="{Binding ElementName=gridInfo,Path=Height}"  Image="{DynamicResource MianBg.Image}"  ImageMargin="{DynamicResource NineMarge}"  Width="{Binding ElementName=gridInfo,Path=Width}"  MouseMove="NineGridBorder_MouseMove">
+                <Grid x:Name="gridInfo" HorizontalAlignment="Right" VerticalAlignment="Top"   >
+                    <Button Name="btnClose" Width="48" Height="28" Margin="0,6,7,0" HorizontalAlignment="Right" VerticalAlignment="Top" Click="btnClose_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Grid>
+                                    <Image
+							Name="normalImage"
+							Width="{TemplateBinding Width}"
+							Height="{TemplateBinding Height}"
+							Source="{DynamicResource CloseNor.Image}"
+							Visibility="Visible" />
+                                    <Image
+							Name="hoverImage"
+							Width="{TemplateBinding Width}"
+							Height="{TemplateBinding Height}"
+							Source="{DynamicResource CloseNor.Image}"
+							Visibility="Collapsed" />
+                                    <ContentControl
+							Name="btnText"
+							Content="{TemplateBinding Content}"
+							HorizontalAlignment="Center"
+							VerticalAlignment="Center"
+							Foreground="{TemplateBinding Foreground}" />
+                                </Grid>
+                                <ControlTemplate.Triggers>
+                                    <Trigger
+							Property="UIElement.IsMouseOver"
+							Value="True">
+                                        <Setter
+								TargetName="normalImage"
+								Property="Visibility"
+								Value="Collapsed" />
+                                        <Setter
+								TargetName="hoverImage"
+								Property="Visibility"
+								Value="Visible" />
+                                    </Trigger>
+                                    <Trigger
+							Property="IsPressed"
+							Value="True">
+                                        <Setter
+								TargetName="normalImage"
+								Property="Visibility"
+								Value="Collapsed" />
+                                        <Setter
+								TargetName="hoverImage"
+								Property="Visibility"
+								Value="Visible" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+
+                        </Button.Template>
+                        <Button.Background>
+                            <ImageBrush ImageSource="{DynamicResource CloseNor.Image}"/>
+                        </Button.Background>
+                    </Button>
+
+
+                </Grid>
+            </local1:NineGridBorder>
+        </Grid>
+        <TextBlock x:Name="tbTitel" Text="补丁更新" Foreground="{DynamicResource TitleBrush}"  FontSize="30" Margin="35 35 0 0"  FontWeight="Black" ></TextBlock>
+        <Line x:Name="TitLine" X1="20" Y1="90" X2="760" Y2="90" Stroke="{DynamicResource LineBrush}" StrokeThickness="1"></Line>
+        <TextBlock x:Name="tbUpdateInfo" Foreground="{DynamicResource FontBrush}" Text="" Grid.Row="1" Height="80" FontSize="20" FontWeight="Black" Padding="5" Margin="64 30 0 0"></TextBlock>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" VerticalAlignment="Bottom" Margin="68 0">
+            <TextBlock x:Name="tbSpeed"  Foreground="{DynamicResource FontBrush}"  Text="进度："  VerticalAlignment="Center" FontSize="18"></TextBlock>
+
+            <ProgressBar x:Name="pBar" Style="{DynamicResource PBarStyle}" Height="15" Width="530" Value="50"  Margin="10"/>
+
+            <TextBlock x:Name="tbPercentage" Foreground="{DynamicResource FontBrush}" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="18" Margin="16 0 40 0"> </TextBlock>
+        </StackPanel>
+        <Border x:Name="bdrVer" Grid.Row="2" BorderBrush="{DynamicResource BorderBrush}"  BorderThickness="1" Height="{Binding ElementName=splVer,Path=Height}" Width="{Binding ElementName=splVer,Path=Width}" >
+
+            <StackPanel Grid.Row="2" x:Name="splVer" Margin="30 30 0 0" Width="640" Height="280">
+                <TextBlock x:Name="tbVer"  FontSize="18" Foreground="{DynamicResource FontBrush}" Margin="0 0 0 20">
+            <Run Text="补丁版本："></Run>
+            <Run x:Name="runVer" Text="{Binding VerInfo}"></Run>
+                </TextBlock>
+
+                <TextBlock  x:Name="tbUpText" Text="更新内容:" FontSize="18" Foreground="{DynamicResource FontBrush}">
+                </TextBlock>
+                <TextBlock x:Name="tbUpInfo" Text="{Binding UpdateInfo}" FontSize="18" Foreground="{DynamicResource FontBrush}"></TextBlock>
+
+            </StackPanel>
+
+
+        </Border>
+        <Button Content="Button" Visibility="Collapsed"  HorizontalAlignment="Left" Margin="10,118,0,0" Grid.Row="2" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+
+    </Grid>
+</Window>

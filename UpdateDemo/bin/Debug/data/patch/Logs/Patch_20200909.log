@@ -1,0 +1,6 @@
+PatchUpdate.ftp.CSharpFtpClient---2020-09-09 15:07:00---Message:无法访问已释放的对象。
+对象名:“System.Net.Sockets.NetworkStream”。,StackTrace:   在 System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   在 PatchUpdate.ftp.CSharpFtpClient.SendCommand(String command) 位置 E:\Code\PatchUpdateMechanism\UpdateFile\ftp\FtpHelper.cs:行号 487 
+PatchUpdate.ftp.CSharpFtpClient---2020-09-09 15:07:00---Message:无法访问已释放的对象。
+对象名:“System.Net.Sockets.NetworkStream”。,StackTrace:   在 System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   在 PatchUpdate.ftp.CSharpFtpClient.ReadRespone() 位置 E:\Code\PatchUpdateMechanism\UpdateFile\ftp\FtpHelper.cs:行号 511 

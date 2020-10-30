@@ -1,0 +1,12 @@
+2020/09/05 15:23:06 [I]:zip file E:\Code\PatchUpdateMechanism\ISClient-B3323-H02-y00554-20200905.ph
+2020/09/05 15:23:06 [I]:find file fileinfo.json
+2020/09/05 15:23:06 [I]:find file hotfix.exe
+2020/09/05 15:23:06 [I]:find file update.json
+2020/09/05 15:23:06 [I]:find file update4client.dll
+2020/09/05 15:23:06 [I]:compress patch sucess
+2020/09/05 15:35:07 [I]:zip file E:\Code\PatchUpdateMechanism\OgreXMLConverter-B3323-B3323-y00554-20200905.ph
+2020/09/05 15:35:07 [I]:find file data\patch\update.log
+2020/09/05 15:35:07 [I]:find file fileinfo.json
+2020/09/05 15:35:07 [I]:find file hotfix.exe
+2020/09/05 15:35:07 [I]:find file update.json
+2020/09/05 15:35:07 [I]:compress patch sucess

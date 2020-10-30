@@ -1,0 +1,17 @@
+E:\Code\PatchUpdateMechanism\UpdateDemo\bin\Debug\UpdateDemo.exe.config
+E:\Code\PatchUpdateMechanism\UpdateDemo\bin\Debug\UpdateDemo.exe
+E:\Code\PatchUpdateMechanism\UpdateDemo\bin\Debug\UpdateDemo.pdb
+E:\Code\PatchUpdateMechanism\UpdateDemo\bin\Debug\UpdateFile.dll
+E:\Code\PatchUpdateMechanism\UpdateDemo\obj\Debug\UpdateDemo.csprojAssemblyReference.cache
+E:\Code\PatchUpdateMechanism\UpdateDemo\obj\Debug\MainWindow.g.cs
+E:\Code\PatchUpdateMechanism\UpdateDemo\obj\Debug\App.g.cs
+E:\Code\PatchUpdateMechanism\UpdateDemo\obj\Debug\UpdateDemo_Content.g.cs
+E:\Code\PatchUpdateMechanism\UpdateDemo\obj\Debug\UpdateDemo_MarkupCompile.cache
+E:\Code\PatchUpdateMechanism\UpdateDemo\obj\Debug\UpdateDemo_MarkupCompile.lref
+E:\Code\PatchUpdateMechanism\UpdateDemo\obj\Debug\MainWindow.baml
+E:\Code\PatchUpdateMechanism\UpdateDemo\obj\Debug\UpdateDemo.g.resources
+E:\Code\PatchUpdateMechanism\UpdateDemo\obj\Debug\UpdateDemo.Properties.Resources.resources
+E:\Code\PatchUpdateMechanism\UpdateDemo\obj\Debug\UpdateDemo.csproj.GenerateResource.cache
+E:\Code\PatchUpdateMechanism\UpdateDemo\obj\Debug\UpdateDemo.csproj.CopyComplete
+E:\Code\PatchUpdateMechanism\UpdateDemo\obj\Debug\UpdateDemo.exe
+E:\Code\PatchUpdateMechanism\UpdateDemo\obj\Debug\UpdateDemo.pdb

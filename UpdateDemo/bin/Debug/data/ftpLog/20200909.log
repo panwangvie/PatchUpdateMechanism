@@ -1,0 +1,6 @@
+UpdateFile.FtpTestMethod+<>c---2020-09-09 15:06:41---220 成功连接到服务器
+UpdateFile.FtpTestMethod+<>c---2020-09-09 15:06:41---331 用户名验证成功，需要密码验证
+UpdateFile.FtpTestMethod+<>c---2020-09-09 15:06:41---230 登入成功
+UpdateFile.FtpTestMethod+<>c---2020-09-09 15:06:41---550 改变目录失败,/home/ftpuser/client/patch/HotfixMath
+UpdateFile.FtpTestMethod+<>c---2020-09-09 15:07:00--- 注销失败
+UpdateFile.FtpTestMethod+<>c---2020-09-09 15:07:00---断开服务器连接
